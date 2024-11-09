@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    scroll-behavior: smooth ;
 }
 
 /* Logo container */
@@ -309,4 +310,135 @@ nav ul li a:hover {
     height: auto;
     box-shadow: #111010 0 0 10px;
     
+}
+
+#contact {
+    background: url('/resources/images/vives.jpg') no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    color: #333;
+    padding: 20px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    text-shadow: rgba(0, 0, 0, 0.455) 2px 2px 9px;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    /*align items next to each ohter*/
+    display: inline-block;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #444;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.input-group img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+#scroll-to-top {
+    display: block;
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#58845d;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-color: #475548;
+    border-style:solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#scroll-to-top:hover {
+    background-color: #464E47;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
 }
