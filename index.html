@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IoTForClimate</title>
+    <link rel="stylesheet" href="./resources/styles/style.css"> 
 </head>
 <body>
-    <div class="bodydiv">
-        
+    <div>
+        <nav>
+            <ul>
+                <li><div class="logo"><img src="./resources/images/tree-evergreen-svgrepo-com.svg" alt=""></div></li>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#klimaatverandering">Klimaatverandering</a></li>
+                <li><a href="#iot">IoT Oplossingen</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+    <div class="jumbotron">
+        <div class="jumbotron-bg"></div>
+        <div class="jumbotron-overlay"></div>
+        <h1 class="jumbotron-title">IoTForClimate</h1>
+        <p class="jumbotron-subtitle">Dreaming of a better future.</p>
+    </div>
+    <section id="over-ons">
+        <div class="container">
+            <h2>Over Ons</h2>
+            <p>Welkom! Wij zijn Joe, Joren, en Simon, de oprichters van IoTforClimate.</p>
+            <p>Onze missie is om slimme IoT-oplossingen te creëren die bijdragen aan een schonere, duurzamere planeet.</p>
+            <div class="founders">
+                <div class="founder">
+                    <img src="./resources/images/Joe.jpg" alt="Afbeelding Oprichter 1">
+                    <p><em>Joe Boone</em></p>
+                </div>
+                <div class="founder">
+                    <img src="./resources/images/Joren.jpg" alt="Afbeelding Oprichter 2">
+                    <p><em>Joren Vandewalle</em></p>
+                </div>
+                <div class="founder">
+                    <img src="./resources/images/Saimon.jpg" alt="Afbeelding Oprichter 3">
+                    <p><em>Simon Stijnen</em></p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="klimaatverandering">
+        <div class="container">
+            <h2>Klimaatverandering</h2>
+            <p>Klimaatverandering vormt een ernstige bedreiging voor onze planeet en levensstijl.</p>
+            <ul>
+                <li><strong>Stijgende zeespiegels:</strong> Smeltende ijskappen zorgen voor hogere zeeniveaus, wat overstromingsrisico’s verhoogt en kustgebieden bedreigt.</li>
+                <li><strong>Extremer weer:</strong> Meer hevige orkanen, droogtes en overstromingen beïnvloeden landbouw en infrastructuur. Droogte kan zeer vaak zorgen voor hevige bosbranden.</li>
+                <li><strong>Bedreiging voor ecosystemen:</strong> Veel ecosystemen, zoals koraalriffen en bossen, lijden onder temperatuurstijgingen en verliezen soorten.</li>
+                <li><strong>Gezondheidsrisico's:</strong> Warmer weer en slechte luchtkwaliteit verhogen ademhalingsproblemen en verspreiden ziektes.</li>
+                <li><strong>Economische kosten:</strong> Schade aan infrastructuur en gezondheidszorgkosten nemen toe door klimaatgerelateerde rampen.</li>
+            </ul>
+            <figure>
+                <img src="/resources/images/burning forest.jpg" alt="Afbeelding klimaatverandering">
+                <figcaption>Bosbranden: De impact van klimaatverandering</figcaption>
+            </figure>
+        </div>
+    </section> 
+    <section id="iot">
+        <div class="container">
+            <h2>IoT Oplossingen</h2>
+            <p>Met IoT kunnen we klimaatverandering aanpakken door innovatieve technologieën te gebruiken.</p>
+            <p>Voorbeelden zijn:</p>
+            <ul>
+                <li class="iot-item left">
+                    <div class="image-container">
+                        <img src="/resources/images/thermostaat.png" alt="Slimme thermostaat">
+                    </div>
+                    <span>Slimme thermostaten die energieverbruik optimaliseren</span>
+                </li>
+                <li class="iot-item right">
+                    <div class="image-container">
+                        <img src="/resources/images/irrigatie.png" alt="Automatische irrigatiesystemen">
+                    </div>
+                    <span>Automatische irrigatiesystemen voor efficiënter watergebruik</span>
+                </li>
+                <li class="iot-item left">
+                    <div class="image-container">
+                        <img src="/resources/images/stad.png" alt="Luchtkwaliteitsmonitoring">
+                    </div>
+                    <span>Luchtkwaliteitsmonitoring in grote steden</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Neem gerust contact met ons op voor meer informatie.</p>
+            <form action="verwerk_contact.php" method="POST">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" required></textarea>
+                
+                <button type="submit">Verstuur</button>
+            </form>
+            <p>Email: info@julliebedrijf.nl | Telefoon: +31 6 12345678</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jullie Bedrijfsnaam. Alle rechten voorbehouden.</p>
+    </footer>
+
 </body>
 </html>

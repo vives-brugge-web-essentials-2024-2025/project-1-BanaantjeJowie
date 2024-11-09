@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+/* SVG logo styling */
+.logo img {
+    width: 40px;
+    height: 40px;
+    padding-top: 5%;
+    transition: transform 0.4s ease 0s;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+nav {               
+    width: 100%;           
+    background-color: #333; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    padding: 15px 10px;
+    display: flex;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #b7afaf; 
+    color: #111010;
+    transition: background-color 5 ease-in-out;
+    /*the text smoothly changes size subtly*/
+    transition: font-size 0.3s ease;
+    font-size: 1.3em;
+
+}
+
+.jumbotron {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    color: white;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.jumbotron-bg {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/resources/images/bomen.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.jumbotron-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.jumbotron-title {
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron-subtitle {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 250px;
+        padding: 1.5rem;
+    }
+
+    .jumbotron-title {
+        font-size: 2rem;
+    }
+
+    .jumbotron-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#over-ons {
+    background-color: #464646;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+}
+
+#over-ons h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+#over-ons p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.founder {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+
+.founder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.founder p {
+    font-style: italic;
+    font-size: 0.5em;
+    color: #cbc9c9;
+}
+
+#klimaatverandering {
+    position: relative;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#klimaatverandering::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/resources/images/bliss.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -2;
+}
+
+#klimaatverandering::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#klimaatverandering .container {
+    position: relative;
+    z-index: 1;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+}
+
+#klimaatverandering h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#klimaatverandering p,
+#klimaatverandering ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#klimaatverandering ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#klimaatverandering li {
+    margin: 10px 0;
+}
+
+#klimaatverandering figure {
+    margin-top: 20px;
+}
+
+#klimaatverandering img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+#klimaatverandering figcaption {
+    font-size: 0.9em;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+#iot {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container span {
+    color: #f1f1f1;
+    
+}
+
+.iot-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.iot-item.left {
+    flex-direction: row;
+    font-size: 1.5em;
+}
+
+.iot-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.image-container {
+    width: 200px;
+    height: 150px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-color: #b7afaf;
+    border-width: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: #111010 0 0 10px;
+    
+}
