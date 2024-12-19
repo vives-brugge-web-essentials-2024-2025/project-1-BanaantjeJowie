@@ -12,8 +12,8 @@ window.addEventListener("scroll", function() {
     }
 
     // Calculate RGB values for color transition from light blue to green
-    const startColor = { r: 173, g: 216, b: 230 }; // Light blue (#ADD8E6)
-    const endColor = { r: 88, g: 132, b: 93 };     // Green (#58845D)
+    const startColor = { r: 173, g: 216, b: 230 };
+    const endColor = { r: 88, g: 132, b: 93 };
 
     const r = Math.round(startColor.r + (endColor.r - startColor.r) * scrollPercent);
     const g = Math.round(startColor.g + (endColor.g - startColor.g) * scrollPercent);
