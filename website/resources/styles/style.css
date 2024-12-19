@@ -85,7 +85,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/resources/images/bomen.jpg') no-repeat center center;
+    background: url('/website/resources/images/bomen.jpg') no-repeat center center;
     background-size: cover;
     filter: blur(7px);
     z-index: -1;
@@ -195,7 +195,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/resources/images/bliss.png') no-repeat center center;
+    background: url('/website/resources/images/bliss.png') no-repeat center center;
     background-size: cover;
     filter: blur(8px);
     z-index: -2;
