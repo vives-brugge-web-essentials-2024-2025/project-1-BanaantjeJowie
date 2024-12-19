@@ -61,10 +61,8 @@ nav ul li a:hover {
     box-shadow: #b7afaf 0 0 10px;
     color: #111010;
     transition: background-color 5 ease-in-out;
-    /*the text smoothly changes size subtly*/
     transition: font-size 0.3s ease;
     font-size: 1.3em;
-
 }
 
 .jumbotron {
@@ -447,6 +445,7 @@ nav ul li a:hover {
 #scroll-to-top.show {
     display: block;
     opacity: 1;
+    box-shadow: #fff 0 0 10px;
 }
 
 #scroll-to-top:hover {
